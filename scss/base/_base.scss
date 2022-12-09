@@ -1,0 +1,90 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+// Layout
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+
+
+
+// Body
+
+body {
+	font-family: Poppins, sans-serif !important; 
+	font-size: 1rem;
+	letter-spacing: 0.4px;
+	color: #666;
+	margin: 0;
+}
+
+/* Links */
+
+a:link {
+	color: $white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: $white;
+}
+
+a:active {
+	color: $black;
+}
+
+// Header
+
+.top-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+	height: 60px;
+	padding: 1em;
+}
+
+.navbar {
+
+	background-color: $white;
+	white-space: nowrap;
+
+	a {
+		color: $white;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+	}
+	.mobile{
+		white-space: nowrap;
+
+	}
+	
+}
+
+#form-control-search{
+	background-color: #E5E5E5;
+	
+}
+
+
+
+
+

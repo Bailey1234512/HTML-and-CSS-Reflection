@@ -1,0 +1,72 @@
+footer {
+	font-size: 16px;
+	font-family: Poppins, sans-serif;
+	background-color: $bunting;
+	display: block;
+	flex-direction: column;
+	color:$white;
+	flex: 1 0 20%;
+	flex-wrap: wrap;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	a:link {
+		color: $white;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	a:visited {
+		color: $white;
+	}
+
+	a:active {
+		color: $black;
+	}
+
+	.footer-row {
+		margin-top: 15%;
+		.services,
+		.offices {
+			margin-top: 15%;
+		}
+
+		.service,
+		.office {
+			margin-top: 15%;
+		}
+	}
+
+	.bottom {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid $white;
+		padding: 1%;
+
+		.license {
+			color: $white;
+			text-decoration: none;
+			list-style: none;
+			display: flex;
+
+			span {
+				margin: 0 5px 0 5px;
+			}
+		}
+
+		.social-media {
+			display: flex;
+		}
+	}
+}
+
+.visible-xs {
+	display: none;
+}
+

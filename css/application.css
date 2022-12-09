@@ -1,0 +1,542 @@
+* {
+  box-sizing: border-box; }
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+
+body {
+  font-family: Poppins, sans-serif !important;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  color: #666;
+  margin: 0; }
+
+/* Links */
+a:link {
+  color: #fff;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:visited {
+  color: #fff; }
+
+a:active {
+  color: #000; }
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  height: 60px;
+  padding: 1em; }
+
+.navbar {
+  background-color: #fff;
+  white-space: nowrap; }
+  .navbar a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center; }
+  .navbar .mobile {
+    white-space: nowrap; }
+
+#form-control-search {
+  background-color: #E5E5E5; }
+
+.menu {
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  left: 0;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.menu-button-container {
+  display: none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333645;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px; }
+
+#menu-toggle {
+  display: none; }
+
+.menu-button, .menu-button::before, .menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px; }
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px; }
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px; }
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg); }
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: #333645; }
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg); }
+
+.menu-button-container {
+  display: flex; }
+
+footer {
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  background-color: #333645;
+  display: block;
+  flex-direction: column;
+  color: #fff;
+  flex: 1 0 20%;
+  flex-wrap: wrap; }
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  footer a:link {
+    color: #fff;
+    text-decoration: none; }
+  footer a:hover {
+    text-decoration: underline; }
+  footer a:visited {
+    color: #fff; }
+  footer a:active {
+    color: #000; }
+  footer .footer-row {
+    margin-top: 15%; }
+    footer .footer-row .services,
+    footer .footer-row .offices {
+      margin-top: 15%; }
+    footer .footer-row .service,
+    footer .footer-row .office {
+      margin-top: 15%; }
+  footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding: 1%; }
+    footer .bottom .license {
+      color: #fff;
+      text-decoration: none;
+      list-style: none;
+      display: flex; }
+      footer .bottom .license span {
+        margin: 0 5px 0 5px; }
+    footer .bottom .social-media {
+      display: flex; }
+
+.visible-xs {
+  display: none; }
+
+.service-list {
+  margin-top: 30px; }
+  .service-list h1 {
+    font-size: 2.7rem;
+    margin-bottom: -10px;
+    margin-top: -13px; }
+  .service-list .h2 {
+    font-family: inherit;
+    font-size: 1.5rem;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 10px;
+    margin: 0 0 11px; }
+  .service-list h3 a {
+    color: #333645; }
+  .service-list .btn {
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid transparent; }
+  .service-list .block {
+    margin-top: 30px;
+    margin: 10px;
+    padding: 30px;
+    display: block;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s; }
+    .service-list .block::after {
+      display: block;
+      clear: both;
+      content: ""; }
+  .service-list .block:hover {
+    background-color: white;
+    color: #fff;
+    border-color: transparent;
+    top: -10px;
+    transition: 0.5s ease; }
+  .service-list .software {
+    background-color: white;
+    color: black; }
+    .service-list .software .btn-container {
+      background-color: #67809f;
+      border-radius: 3px;
+      color: white !important;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .software .dot {
+      background-color: #67809f;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: white;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .software:hover {
+    background-color: #67809f; }
+    .service-list .software:hover .btn-container {
+      background-color: white;
+      border-radius: 3px;
+      color: #67809f !important;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .software:hover .dot {
+      background-color: white;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: #67809f;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .it {
+    background-color: white;
+    color: black; }
+    .service-list .it .btn-container {
+      background-color: #4183d7;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .it .dot {
+      background-color: #4183d7;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: white;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .it:hover {
+    background-color: #4183d7; }
+    .service-list .it:hover .btn-container {
+      background-color: white;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .it:hover .dot {
+      background-color: white;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: #4183d7;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .digital {
+    background-color: white;
+    color: black; }
+    .service-list .digital .btn-container {
+      background-color: #2ecc71;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .digital .dot {
+      background-color: #2ecc71;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: white;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .digital:hover {
+    background-color: #2ecc71; }
+    .service-list .digital:hover .btn-container {
+      background-color: white;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .digital:hover .dot {
+      background-color: white;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: #2ecc71;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .telecoms {
+    background-color: white;
+    color: black; }
+    .service-list .telecoms .btn-container {
+      background-color: #d64541;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .telecoms .dot {
+      background-color: #d64541;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: white;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .telecoms:hover {
+    background-color: #d64541; }
+    .service-list .telecoms:hover .btn-container {
+      background-color: white;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .telecoms:hover .dot {
+      background-color: white;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: #d64541;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .web {
+    background-color: white;
+    color: black; }
+    .service-list .web .btn-container {
+      background-color: #926fb1;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .web .dot {
+      background-color: #926fb1;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: white;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .web:hover {
+    background-color: #926fb1; }
+    .service-list .web:hover .btn-container {
+      background-color: white;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .web:hover .dot {
+      background-color: white;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: #926fb1;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .security {
+    background-color: white;
+    color: black; }
+    .service-list .security .btn-container {
+      background-color: #f62459;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .security .dot {
+      background-color: #f62459;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: white;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .security:hover {
+    background-color: #f62459; }
+    .service-list .security:hover .btn-container {
+      background-color: white;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .security:hover .dot {
+      background-color: white;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: #f62459;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .developer-course {
+    background-color: white;
+    color: black; }
+    .service-list .developer-course .btn-container {
+      background-color: #ce4125;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .developer-course .dot {
+      background-color: #ce4125;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: white;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+  .service-list .developer-course:hover {
+    background-color: #ce4125; }
+    .service-list .developer-course:hover .btn-container {
+      background-color: white;
+      border-radius: 3px;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      box-sizing: border-box; }
+    .service-list .developer-course:hover .dot {
+      background-color: white;
+      height: 65px;
+      width: 65px !important;
+      border-radius: 50%;
+      color: #ce4125;
+      font-size: 2em !important;
+      box-sizing: border-box;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5em 0.6em; }
+
+.article-list {
+  margin-top: 20px; }
+  .article-list h1 {
+    font-size: 3rem;
+    margin-bottom: -10px;
+    margin-top: -15px; }
+  .article-list h2 {
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 0 0 10px; }
+  .article-list .item {
+    position: relative;
+    margin-top: 30px;
+    display: block;
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+    transition: top ease 0.5s; }
+    .article-list .item .block {
+      border: 1px solid #ccc;
+      border-top: none; }
+  .article-list .item:hover {
+    transform: translate(0, -10px); }
+
+.brand-color {
+  background-color: #333645;
+  color: #fff;
+  padding: 50px 15px; }
+
+.btn-google {
+  background-color: #4183d7 !important; }
+
+.btn-trustpilot {
+  background-color: #00B67B !important; }
+
+/*# sourceMappingURL=application.css.map */
