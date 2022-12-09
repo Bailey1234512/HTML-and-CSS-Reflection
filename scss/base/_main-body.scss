@@ -1,5 +1,9 @@
 .service-list {
     margin-top: 30px;
+    line-height: 1.365rem;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    color: #333645;
 
     h1 {
         font-size: 2.7rem;
@@ -40,6 +44,7 @@
         border-radius: 15px;
         border: 1px solid #ccc;
         text-align: center;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 
         position: relative;
         top: 0;
@@ -390,7 +395,7 @@
             padding: 0.5em 0.6em;
         }
     }
-    
+
     .developer-course:hover {
         background-color: #ce4125;
         .btn-container {
@@ -415,63 +420,211 @@
             padding: 0.5em 0.6em;
         }
     }
-
-
-
- 
-
-
-
-
-
-
-
-    
-}
-
-.article-list {
-    margin-top: 20px;
-    h1 {
-        font-size: 3rem;
-        margin-bottom: -10px;
-        margin-top: -15px;
-    }
-    h2 {
-        font-size: 1.5rem;
-        position: relative;
-        padding-bottom: 10px;
-        margin: 0 0 10px;
-    }
-
-    .item {
-        position: relative;
-        margin-top: 30px;
-        display: block;
-
-        padding: 30px;
-        text-align: center;
-        background-color: black;
-        transition: top ease 0.5s;
-        .block {
-            border: 1px solid #ccc;
-            border-top: none;
-        }
-    }
-    .item:hover {
-        transform: translate(0, -10px);
-    }
 }
 
 .brand-color {
     background-color: $bunting;
     color: $white;
     padding: 50px 15px;
+
+    a:link {
+        color: $white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: $white;
+    }
+    .btn-read-more {
+        background-color: #272936;
+    }
+    .btn-read-more:hover {
+        background-color: #15171e;
+    }
+
+    .client-quote {
+        font-style: italic;
+    }
+    .client-quote-author {
+        font-weight: 600;
+        color: #a3a8ac;
+        font-size: 1.1rem;
+    }
+    .btn-google {
+        background-color: $havelock !important;
+    }
+
+    .btn-trustpilot {
+        background-color: $green !important;
+    }
 }
 
-.btn-google {
-    background-color: $havelock !important;
+.article-list {
+    margin-top: 30px;
+    line-height: 1.365rem;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    color: #333645;
+
+    h1 {
+        font-size: 2.7rem;
+        margin-bottom: -10px;
+        margin-top: -13px;
+    }
+    .h2 {
+        font-family: inherit;
+        font-size: 1.5rem;
+        position: relative;
+        text-decoration: none;
+        padding-bottom: 10px;
+        margin: 0 0 11px;
+    }
+
+    h3 {
+        a {
+            color: #333645;
+        }
+    }
+
+    .btn {
+        height: auto;
+        background-color: #67809f;
+        line-height: 35px;
+        padding: 5px 15px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        border-radius: 3px;
+        border: 1px solid transparent;
+    }
+
+    .heading{
+        color: #67809f;
+    }
+
+    
+
+    .item {
+        position: relative;
+        width: 400px;
+        height: 600px;
+        display: block;
+        text-align: left;
+        padding: 30px;
+        border: 1px solid #ccc;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+
+
+        .block {
+            display: block;
+            
+    
+            position: relative;
+            top: 0;
+            
+    
+            @include clearfix;
+        }
+        
+    
+    }
+    .item:hover {
+            border-color: transparent;
+            top: -10px;
+            transition: 0.5s ease;
+        
+    }
+}
+.section{
+    padding: 2%;
+    align-items: center;
+    vertical-align: middle;
+    .container{
+
+        .list{
+            
+              
+              
+
+            .item {
+                -webkit-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+                filter: grayscale(100%);
+                transition: all 0.5s ease;
+                
+            }
+            
+            .item:hover {
+                -webkit-filter: grayscale(0%);
+                -moz-filter: grayscale(0%);
+                filter: grayscale(0%);
+                transition: all 0.5s ease;
+
+                
+            }
+        }
+        
+    }
+    
 }
 
-.btn-trustpilot {
-    background-color: $green !important;
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    height: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
+
+.newsletter-full-width {
+    background-color: #ddd;
+    color: $bunting;
+    padding: 20px;
+    margin: auto;
+    a {
+        color: $bunting;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #22242e;
+    }
+
+    .btn-subscribe {
+        color: white;
+        background-color: $bunting;
+    }
+    .btn-subscribe:hover {
+        color: white;
+        background-color: #22242e;
+    }
 }

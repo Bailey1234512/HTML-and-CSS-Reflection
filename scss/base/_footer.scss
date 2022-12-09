@@ -1,5 +1,5 @@
 footer {
-	font-size: 16px;
+	font-size: 13px;
 	font-family: Poppins, sans-serif;
 	background-color: $bunting;
 	display: block;
@@ -7,6 +7,8 @@ footer {
 	color:$white;
 	flex: 1 0 20%;
 	flex-wrap: wrap;
+
+
 	ul {
 		list-style: none;
 		padding: 0;
@@ -31,15 +33,15 @@ footer {
 	}
 
 	.footer-row {
-		margin-top: 15%;
+		margin-bottom: 5%;
 		.services,
 		.offices {
-			margin-top: 15%;
+			margin-top: 2%;
 		}
 
 		.service,
 		.office {
-			margin-top: 15%;
+			margin-top: 2%;
 		}
 	}
 

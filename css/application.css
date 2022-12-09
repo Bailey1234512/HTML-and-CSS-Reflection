@@ -109,7 +109,7 @@ a:active {
   display: flex; }
 
 footer {
-  font-size: 16px;
+  font-size: 13px;
   font-family: Poppins, sans-serif;
   background-color: #333645;
   display: block;
@@ -131,13 +131,13 @@ footer {
   footer a:active {
     color: #000; }
   footer .footer-row {
-    margin-top: 15%; }
+    margin-bottom: 5%; }
     footer .footer-row .services,
     footer .footer-row .offices {
-      margin-top: 15%; }
+      margin-top: 2%; }
     footer .footer-row .service,
     footer .footer-row .office {
-      margin-top: 15%; }
+      margin-top: 2%; }
   footer .bottom {
     display: flex;
     justify-content: space-between;
@@ -157,7 +157,11 @@ footer {
   display: none; }
 
 .service-list {
-  margin-top: 30px; }
+  margin-top: 30px;
+  line-height: 1.365rem;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  color: #333645; }
   .service-list h1 {
     font-size: 2.7rem;
     margin-bottom: -10px;
@@ -188,6 +192,7 @@ footer {
     border-radius: 15px;
     border: 1px solid #ccc;
     text-align: center;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     position: relative;
     top: 0;
     transition: top ease 0.5s; }
@@ -503,40 +508,142 @@ footer {
       vertical-align: middle;
       padding: 0.5em 0.6em; }
 
-.article-list {
-  margin-top: 20px; }
-  .article-list h1 {
-    font-size: 3rem;
-    margin-bottom: -10px;
-    margin-top: -15px; }
-  .article-list h2 {
-    font-size: 1.5rem;
-    position: relative;
-    padding-bottom: 10px;
-    margin: 0 0 10px; }
-  .article-list .item {
-    position: relative;
-    margin-top: 30px;
-    display: block;
-    padding: 30px;
-    text-align: center;
-    background-color: black;
-    transition: top ease 0.5s; }
-    .article-list .item .block {
-      border: 1px solid #ccc;
-      border-top: none; }
-  .article-list .item:hover {
-    transform: translate(0, -10px); }
-
 .brand-color {
   background-color: #333645;
   color: #fff;
   padding: 50px 15px; }
+  .brand-color a:link {
+    color: #fff;
+    text-decoration: none; }
+  .brand-color a:hover {
+    text-decoration: underline; }
+  .brand-color a:visited {
+    color: #fff; }
+  .brand-color .btn-read-more {
+    background-color: #272936; }
+  .brand-color .btn-read-more:hover {
+    background-color: #15171e; }
+  .brand-color .client-quote {
+    font-style: italic; }
+  .brand-color .client-quote-author {
+    font-weight: 600;
+    color: #a3a8ac;
+    font-size: 1.1rem; }
+  .brand-color .btn-google {
+    background-color: #4183d7 !important; }
+  .brand-color .btn-trustpilot {
+    background-color: #00B67B !important; }
 
-.btn-google {
-  background-color: #4183d7 !important; }
+.article-list {
+  margin-top: 30px;
+  line-height: 1.365rem;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  color: #333645; }
+  .article-list h1 {
+    font-size: 2.7rem;
+    margin-bottom: -10px;
+    margin-top: -13px; }
+  .article-list .h2 {
+    font-family: inherit;
+    font-size: 1.5rem;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 10px;
+    margin: 0 0 11px; }
+  .article-list h3 a {
+    color: #333645; }
+  .article-list .btn {
+    height: auto;
+    background-color: #67809f;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: 1px solid transparent; }
+  .article-list .heading {
+    color: #67809f; }
+  .article-list .item {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    display: block;
+    text-align: left;
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s; }
+    .article-list .item .block {
+      display: block;
+      position: relative;
+      top: 0; }
+      .article-list .item .block::after {
+        display: block;
+        clear: both;
+        content: ""; }
+  .article-list .item:hover {
+    border-color: transparent;
+    top: -10px;
+    transition: 0.5s ease; }
 
-.btn-trustpilot {
-  background-color: #00B67B !important; }
+.section {
+  padding: 2%;
+  align-items: center;
+  vertical-align: middle; }
+  .section .container .list .item {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease; }
+  .section .container .list .item:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: all 0.5s ease; }
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  /* If you want dots under the hoverable text */ }
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  height: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1; }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible; }
+
+.newsletter-full-width {
+  background-color: #ddd;
+  color: #333645;
+  padding: 20px;
+  margin: auto; }
+  .newsletter-full-width a {
+    color: #333645;
+    text-decoration: underline; }
+  .newsletter-full-width a:hover {
+    color: #22242e; }
+  .newsletter-full-width .btn-subscribe {
+    color: white;
+    background-color: #333645; }
+  .newsletter-full-width .btn-subscribe:hover {
+    color: white;
+    background-color: #22242e; }
 
 /*# sourceMappingURL=application.css.map */
