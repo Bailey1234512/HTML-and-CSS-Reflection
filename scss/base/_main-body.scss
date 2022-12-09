@@ -469,6 +469,11 @@
     font-weight: 400;
     font-size: 0.8125rem;
     color: #333645;
+    
+    .img-container img{
+        height: 40%;
+        width: 100%;
+    }
 
     h1 {
         font-size: 2.7rem;
@@ -505,7 +510,11 @@
         color: #67809f;
     }
 
-    
+    .user{
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        padding-top: 20px;
+    }
 
     .item {
         position: relative;
@@ -513,7 +522,6 @@
         height: 600px;
         display: block;
         text-align: left;
-        padding: 30px;
         border: 1px solid #ccc;
         box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 
@@ -524,7 +532,7 @@
 
         .block {
             display: block;
-            
+            padding: 30px;
     
             position: relative;
             top: 0;
@@ -536,9 +544,13 @@
     
     }
     .item:hover {
-            border-color: transparent;
             top: -10px;
             transition: 0.5s ease;
+            .btn:hover{
+                background-color: #67809f;
+                color: white;
+
+            }
         
     }
 }

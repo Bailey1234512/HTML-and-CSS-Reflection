@@ -540,6 +540,9 @@ footer {
   font-weight: 400;
   font-size: 0.8125rem;
   color: #333645; }
+  .article-list .img-container img {
+    height: 40%;
+    width: 100%; }
   .article-list h1 {
     font-size: 2.7rem;
     margin-bottom: -10px;
@@ -564,13 +567,16 @@ footer {
     border: 1px solid transparent; }
   .article-list .heading {
     color: #67809f; }
+  .article-list .user {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding-top: 20px; }
   .article-list .item {
     position: relative;
     width: 400px;
     height: 600px;
     display: block;
     text-align: left;
-    padding: 30px;
     border: 1px solid #ccc;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     position: relative;
@@ -578,6 +584,7 @@ footer {
     transition: top ease 0.5s; }
     .article-list .item .block {
       display: block;
+      padding: 30px;
       position: relative;
       top: 0; }
       .article-list .item .block::after {
@@ -585,9 +592,11 @@ footer {
         clear: both;
         content: ""; }
   .article-list .item:hover {
-    border-color: transparent;
     top: -10px;
     transition: 0.5s ease; }
+    .article-list .item:hover .btn:hover {
+      background-color: #67809f;
+      color: white; }
 
 .section {
   padding: 2%;
