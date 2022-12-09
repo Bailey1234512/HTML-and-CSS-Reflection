@@ -38,19 +38,37 @@ a:active {
   padding: 1em; }
 
 .navbar {
-  background-color: #fff;
-  white-space: nowrap; }
+  background-color: #fff; }
+  .navbar img {
+    border: 0; }
   .navbar a {
     color: #fff;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center; }
   .navbar .mobile {
-    white-space: nowrap; }
+    float: right; }
+  .navbar .btn-it {
+    background-color: #4183d7;
+    border-radius: 3px;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box; }
+  .navbar .btn-default {
+    background-color: #67809f;
+    border-radius: 3px;
+    color: white !important;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box; }
 
-#form-control-search {
-  background-color: #E5E5E5; }
-
+@media screen and (min-width: 776px) {
+  .small-screens {
+    display: none; } }
+@media screen and (min-width: 991px) and (max-width: 777px) {
+  .medium-screens {
+    display: none; } }
 .menu {
   position: absolute;
   top: 0;

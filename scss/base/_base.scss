@@ -61,10 +61,14 @@ a:active {
 	padding: 1em;
 }
 
+
 .navbar {
 
 	background-color: $white;
-	white-space: nowrap;
+
+	img{
+		border: 0;
+	}
 
 	a {
 		color: $white;
@@ -73,16 +77,42 @@ a:active {
 		text-align: center;
 	}
 	.mobile{
-		white-space: nowrap;
+		float:right; 
+	}
+	.btn-it {
+		background-color: #4183d7;
+		border-radius: 3px;
+		color: black;
+		padding: 15px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
 
+	.btn-default {
+		background-color: #67809f;
+		border-radius: 3px;
+		color: white !important;
+		padding: 15px;
+		margin: 10px;
+		box-sizing: border-box;
 	}
 	
-}
-
-#form-control-search{
-	background-color: #E5E5E5;
 	
 }
+
+@media screen and (min-width: 776px) {
+	.small-screens {
+	  display: none;
+	}
+  }
+
+  @media screen and (min-width: 991px) and (max-width: 777px){
+	.medium-screens {
+	  display: none;
+
+	}
+  }
+
 
 
 
