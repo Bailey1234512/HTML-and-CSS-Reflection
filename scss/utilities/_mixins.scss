@@ -2,9 +2,13 @@
 
 
 @mixin clearfix() {
-    &::after {
-      display: block;
-      clear: both;
-      content: "";
-    }
+  .clearfix::before,
+  .clearfix::after {
+  content: "";
+  display: table;
+  }
+  
+  .clearfix::after {
+  clear: both;
+  }
   }

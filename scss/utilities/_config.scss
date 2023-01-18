@@ -3,14 +3,26 @@
 // ==========================================================================
 
 // Font Stacks
-
-$font-url--google        : 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap';
-$font-family--primary    : 'Poppins, sans-serif';
+@import url('');
+$font-url--google        : 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap';
+$font-family--primary    : 'Poppins';
 $font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-// Font Weights
+// Default font-weight and style
+
+$font-weight-poppins: 700;
+$font-style-poppins: normal;
 
 
+// Import the font
+@import url($font-url--google);
+
+// Set the font-family, font-weight and font-style for the body element
+body {
+    font-family: $font-family--primary;
+    font-weight: $font-weight-poppins;
+    font-style: $font-style-poppins;
+}
 
 // Descriptive Base Colors
 

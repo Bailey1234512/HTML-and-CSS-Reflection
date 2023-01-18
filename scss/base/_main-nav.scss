@@ -1,2 +1,111 @@
+.navbar{
+  background-color: $bunting;
+  padding: 0 !important;
+font-size: 23px;
+  h2{
+    color: white;
+  }
+  a{
+    font-size: 19px;
+  }
+}
+.dropdown-hover:hover>.dropdown-menu {
+display: inline-block;
+}
+
+.dropdown-hover>.dropdown-toggle:active {
+/*Without this, clicking will make it sticky*/
+pointer-events: none;
+}
+
+.list-group-item{
+  color: white !important;
+  white-space: nowrap;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.list-group-item:hover{
+  background-color: transparent !important; /* or any other color */
+  border: none !important;
+  text-decoration: underline;
+}
 
 
+
+.bespoke-software{
+  background-color: #333645 ;
+  color: white;
+  
+  .dropdown-menu{
+    background-color: #526781;
+    
+  }
+  .list-group-item{
+    background-color: #526781 ;
+  }
+  .block:hover{
+    background-color: #67809f !important;
+
+  }
+}
+
+.it-support{
+  background-color: #333645 ;
+  .dropdown-menu{
+    background-color: #286abd;;
+  }
+  .list-group-item{
+    background-color: #286abd ;
+  }
+}
+
+.digital-marketing{
+  background-color: #333645 ;
+  .dropdown-menu{
+    background-color: #25a25a;;
+  }
+  .list-group-item{
+    background-color: #25a25a; ;
+  }
+}
+
+.telecoms-services{
+  background-color: #333645 ;
+  .dropdown-menu{
+    background-color: #bc2c28;;
+  }
+  .list-group-item{
+    background-color: #bc2c28;; ;
+  }
+}
+
+.web-design{
+  background-color: #333645 ;
+  .dropdown-menu{
+    background-color: #79539a;;
+  }
+  .list-group-item{
+    background-color: #79539a;; ;
+  }
+}
+
+.cyber-security{
+  background-color: #333645 ;
+  .dropdown-menu{
+    background-color: #de093f;;
+  }
+  .list-group-item{
+    background-color: #de093f;; ;
+  }
+}
+
+.developer-course{
+  background-color: #333645 ;
+  .dropdown-menu{
+    background-color: #a3331d;;
+  }  
+  .list-group-item{
+    background-color: #a3331d; ;
+  }
+}

@@ -1,28 +1,24 @@
 .service-list {
     margin-top: 30px;
-    line-height: 1.365rem;
     font-weight: 400;
-    font-size: 0.8125rem;
     color: #333645;
+    background-color: white;
 
     h1 {
         font-size: 2.7rem;
         margin-bottom: -10px;
-        margin-top: -13px;
     }
     .h2 {
         font-family: inherit;
-        font-size: 1.5rem;
+        font-size: 20px;
         position: relative;
         text-decoration: none;
         padding-bottom: 10px;
         margin: 0 0 11px;
     }
 
-    h3 {
-        a {
-            color: #333645;
-        }
+    a {
+        color: #333645 !important;
     }
 
     .btn {
@@ -30,7 +26,7 @@
         line-height: 35px;
         padding: 5px 15px;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 17px;
         border-radius: 3px;
         text-align: center;
         border: 1px solid transparent;
@@ -38,19 +34,25 @@
 
     .block {
         margin-top: 30px;
+        color: black;
         margin: 10px;
         padding: 30px;
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
         border-radius: 15px;
         border: 1px solid #ccc;
         text-align: center;
+        font-size: 13px;
+        line-height: 22px;
         box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        height: auto;
+        min-height: 350px;
 
         position: relative;
-        top: 0;
+        top: 10px;
         transition: top ease 0.5s;
-
-        @include clearfix;
     }
     .block:hover {
         background-color: white;
@@ -58,45 +60,50 @@
         border-color: transparent;
         top: -10px;
         transition: 0.5s ease;
+        text-decoration: none;
     }
 
-    .software {
+    .dot {
+        height: 65px !important;
+        width: 65px !important;
+        border-radius: 50%;
+        color: white;
+        font-size: 2em !important;
+        box-sizing: border-box;
+        line-height: 60px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0.5em 0.6em;
+    }
+
+    .btn-container {
+        border-radius: 3px;
+        color: black;
+        padding: 5px 15px;
+        margin: 0;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    .service-software {
         background-color: white;
         color: black;
 
         .btn-container {
             background-color: #67809f;
-            border-radius: 3px;
-            color: white !important;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
+            color: white;
         }
         .dot {
             background-color: #67809f;
-            height: 65px;
-            width: 65px !important;
-            border-radius: 50%;
-            color: white;
-            font-size: 2em !important;
-            box-sizing: border-box;
-            line-height: 80px;
-            text-align: center;
-            vertical-align: middle;
-            padding: 0.5em 0.6em;
         }
     }
 
-    .software:hover {
+    .service-software:hover {
         background-color: #67809f;
 
         .btn-container {
             background-color: white;
-            border-radius: 3px;
-            color: #67809f !important;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
+            color: black;
         }
         .dot {
             background-color: white;
@@ -106,7 +113,7 @@
             color: #67809f;
             font-size: 2em !important;
             box-sizing: border-box;
-            line-height: 80px;
+            line-height: 60px;
             text-align: center;
             vertical-align: middle;
             padding: 0.5em 0.6em;
@@ -119,24 +126,10 @@
 
         .btn-container {
             background-color: #4183d7;
-            border-radius: 3px;
-            color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
+            color: white;
         }
         .dot {
             background-color: #4183d7;
-            height: 65px;
-            width: 65px !important;
-            border-radius: 50%;
-            color: white;
-            font-size: 2em !important;
-            box-sizing: border-box;
-            line-height: 80px;
-            text-align: center;
-            vertical-align: middle;
-            padding: 0.5em 0.6em;
         }
     }
 
@@ -145,11 +138,7 @@
 
         .btn-container {
             background-color: white;
-            border-radius: 3px;
             color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
         }
         .dot {
             background-color: white;
@@ -159,7 +148,7 @@
             color: #4183d7;
             font-size: 2em !important;
             box-sizing: border-box;
-            line-height: 80px;
+            line-height: 60px;
             text-align: center;
             vertical-align: middle;
             padding: 0.5em 0.6em;
@@ -171,24 +160,10 @@
         color: black;
         .btn-container {
             background-color: #2ecc71;
-            border-radius: 3px;
-            color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
+            color: white;
         }
         .dot {
             background-color: #2ecc71;
-            height: 65px;
-            width: 65px !important;
-            border-radius: 50%;
-            color: white;
-            font-size: 2em !important;
-            box-sizing: border-box;
-            line-height: 80px;
-            text-align: center;
-            vertical-align: middle;
-            padding: 0.5em 0.6em;
         }
     }
 
@@ -196,11 +171,7 @@
         background-color: #2ecc71;
         .btn-container {
             background-color: white;
-            border-radius: 3px;
             color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
         }
         .dot {
             background-color: white;
@@ -210,7 +181,7 @@
             color: #2ecc71;
             font-size: 2em !important;
             box-sizing: border-box;
-            line-height: 80px;
+            line-height: 60px;
             text-align: center;
             vertical-align: middle;
             padding: 0.5em 0.6em;
@@ -222,24 +193,10 @@
         color: black;
         .btn-container {
             background-color: #d64541;
-            border-radius: 3px;
-            color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
+            color: white;
         }
         .dot {
             background-color: #d64541;
-            height: 65px;
-            width: 65px !important;
-            border-radius: 50%;
-            color: white;
-            font-size: 2em !important;
-            box-sizing: border-box;
-            line-height: 80px;
-            text-align: center;
-            vertical-align: middle;
-            padding: 0.5em 0.6em;
         }
     }
 
@@ -247,11 +204,7 @@
         background-color: #d64541;
         .btn-container {
             background-color: white;
-            border-radius: 3px;
             color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
         }
         .dot {
             background-color: white;
@@ -261,7 +214,7 @@
             color: #d64541;
             font-size: 2em !important;
             box-sizing: border-box;
-            line-height: 80px;
+            line-height: 60px;
             text-align: center;
             vertical-align: middle;
             padding: 0.5em 0.6em;
@@ -273,24 +226,10 @@
         color: black;
         .btn-container {
             background-color: #926fb1;
-            border-radius: 3px;
-            color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
+            color: white;
         }
         .dot {
             background-color: #926fb1;
-            height: 65px;
-            width: 65px !important;
-            border-radius: 50%;
-            color: white;
-            font-size: 2em !important;
-            box-sizing: border-box;
-            line-height: 80px;
-            text-align: center;
-            vertical-align: middle;
-            padding: 0.5em 0.6em;
         }
     }
 
@@ -298,11 +237,7 @@
         background-color: #926fb1;
         .btn-container {
             background-color: white;
-            border-radius: 3px;
             color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
         }
         .dot {
             background-color: white;
@@ -312,7 +247,7 @@
             color: #926fb1;
             font-size: 2em !important;
             box-sizing: border-box;
-            line-height: 80px;
+            line-height: 60px;
             text-align: center;
             vertical-align: middle;
             padding: 0.5em 0.6em;
@@ -324,24 +259,10 @@
         color: black;
         .btn-container {
             background-color: #f62459;
-            border-radius: 3px;
-            color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
+            color: white;
         }
         .dot {
             background-color: #f62459;
-            height: 65px;
-            width: 65px !important;
-            border-radius: 50%;
-            color: white;
-            font-size: 2em !important;
-            box-sizing: border-box;
-            line-height: 80px;
-            text-align: center;
-            vertical-align: middle;
-            padding: 0.5em 0.6em;
         }
     }
 
@@ -349,11 +270,7 @@
         background-color: #f62459;
         .btn-container {
             background-color: white;
-            border-radius: 3px;
             color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
         }
         .dot {
             background-color: white;
@@ -363,7 +280,7 @@
             color: #f62459;
             font-size: 2em !important;
             box-sizing: border-box;
-            line-height: 80px;
+            line-height: 60px;
             text-align: center;
             vertical-align: middle;
             padding: 0.5em 0.6em;
@@ -375,24 +292,10 @@
         color: black;
         .btn-container {
             background-color: #ce4125;
-            border-radius: 3px;
-            color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
+            color: white;
         }
         .dot {
             background-color: #ce4125;
-            height: 65px;
-            width: 65px !important;
-            border-radius: 50%;
-            color: white;
-            font-size: 2em !important;
-            box-sizing: border-box;
-            line-height: 80px;
-            text-align: center;
-            vertical-align: middle;
-            padding: 0.5em 0.6em;
         }
     }
 
@@ -400,11 +303,7 @@
         background-color: #ce4125;
         .btn-container {
             background-color: white;
-            border-radius: 3px;
             color: black;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
         }
         .dot {
             background-color: white;
@@ -414,65 +313,128 @@
             color: #ce4125;
             font-size: 2em !important;
             box-sizing: border-box;
-            line-height: 80px;
+            line-height: 60px;
             text-align: center;
             vertical-align: middle;
             padding: 0.5em 0.6em;
         }
     }
+
 }
 
 .brand-color {
     background-color: $bunting;
     color: $white;
+    font-size: 16px;
     padding: 50px 15px;
+    line-height: 30px;
 
     a:link {
         color: $white;
         text-decoration: none;
+        .underline:hover {
+            text-decoration: underline !important;
+        }
     }
 
     a:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a:visited {
         color: $white;
     }
-    .btn-read-more {
-        background-color: #272936;
-    }
-    .btn-read-more:hover {
-        background-color: #15171e;
-    }
 
     .client-quote {
         font-style: italic;
+        font-size: 20px;
+        font-weight: 600;
     }
     .client-quote-author {
         font-weight: 600;
         color: #a3a8ac;
-        font-size: 1.1rem;
+        font-size: 20px;
+    }
+
+    .btn-read-more {
+        background-color: #272936;
+        font-size: 20px;
+        line-height: 35px;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn-read-more:hover {
+        background-color: #15171e;
     }
     .btn-google {
         background-color: $havelock !important;
+        font-size: 20px;
+        line-height: 35px;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn-google:hover {
+        background-color: #166af4 !important;
     }
 
     .btn-trustpilot {
         background-color: $green !important;
+        font-size: 20px;
+        line-height: 35px;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn-trustpilot:hover {
+        background-color: #009b69 !important;
+    }
+    .col-md-3 {
+        padding: 3px;
     }
 }
 
 .article-list {
-    margin-top: 30px;
-    line-height: 1.365rem;
-    font-weight: 400;
-    font-size: 0.8125rem;
+    color: $white;
+    font-size: 16px;
+    padding: 50px 15px;
+    line-height: 30px;
     color: #333645;
+    background-color: white;
+
+    a {
+        color: #333645 !important;
+    }
+
+    .img-container {
+       
     
-    .img-container img{
-        height: 40%;
-        width: 100%;
+
+        img {
+            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+
+            
+        }
+        .purple {
+            background-color: #926fb1 !important;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            padding: 0 10px;
+        }
+
+        .grey {
+            background-color: #67809f;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            padding: 0 10px;
+        }
     }
 
     h1 {
@@ -480,20 +442,15 @@
         margin-bottom: -10px;
         margin-top: -13px;
     }
-    .h2 {
-        font-family: inherit;
-        font-size: 1.5rem;
-        position: relative;
-        text-decoration: none;
-        padding-bottom: 10px;
-        margin: 0 0 11px;
+   
+
+    p{
+        font-size: 13px;
+        line-height: 22px;
+        min-height: 70px;
+
     }
 
-    h3 {
-        a {
-            color: #333645;
-        }
-    }
 
     .btn {
         height: auto;
@@ -501,90 +458,79 @@
         line-height: 35px;
         padding: 5px 15px;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 17px;
         border-radius: 3px;
         border: 1px solid transparent;
+        font-weight: 400;
     }
 
-    .heading{
-        color: #67809f;
+    .heading {
+        font-size: 16px;    
     }
 
-    .user{
+    .user {
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         margin-top: 20px;
         padding-top: 20px;
     }
 
     .item {
-        position: relative;
-        width: 400px;
-        height: 600px;
         display: block;
+
+        box-sizing: border-box;
         text-align: left;
-        border: 1px solid #ccc;
-        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
 
         position: relative;
         top: 0;
         transition: top ease 0.5s;
 
-
         .block {
+
+            min-height: 400px;
             display: block;
             padding: 30px;
-    
+            border-radius: 2px;
+            border: 1px solid #ccc;
+
             position: relative;
             top: 0;
-            
-    
+
             @include clearfix;
         }
-        
-    
     }
     .item:hover {
-            top: -10px;
-            transition: 0.5s ease;
-            .btn:hover{
-                background-color: #67809f;
-                color: white;
-
-            }
-        
+        top: -10px;
+        transition: 0.5s ease;
+        .btn:hover {
+            background-color: #67809f;
+            color: white;
+        }
     }
 }
-.section{
+
+.section {
     padding: 2%;
     align-items: center;
     vertical-align: middle;
-    .container{
-
-        .list{
-            
-              
-              
-
+    .container {
+        .list {
             .item {
                 -webkit-filter: grayscale(100%);
                 -moz-filter: grayscale(100%);
                 filter: grayscale(100%);
                 transition: all 0.5s ease;
-                
             }
-            
+
             .item:hover {
                 -webkit-filter: grayscale(0%);
                 -moz-filter: grayscale(0%);
                 filter: grayscale(0%);
                 transition: all 0.5s ease;
-
-                
             }
         }
-        
     }
-    
 }
 
 /* Tooltip container */
@@ -592,10 +538,10 @@
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
-  
-  /* Tooltip text */
-  .tooltip .tooltiptext {
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     height: auto;
@@ -604,19 +550,16 @@
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-   
+
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
     visibility: visible;
-  }
-
-
-
+}
 
 .newsletter-full-width {
     background-color: #ddd;
