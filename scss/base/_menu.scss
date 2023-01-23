@@ -8,6 +8,7 @@
 	justify-content: center;
 	align-items: center;
 
+
 }
 
 .menu-button-container {
@@ -21,9 +22,9 @@
 	background-color: $bunting;
 	padding: 10px;
 	margin: 10px;
-	margin-right: 0;
+	margin-right: 10px !important;
 	border-radius: 5px;
-	margin-left: 20px !important;
+
 }
 
 #menu-toggle {

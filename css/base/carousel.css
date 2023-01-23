@@ -29,7 +29,8 @@
     height: 50px;
     font-size: 20px;
     line-height: 50px;
-    font-weight: 400; }
+    font-weight: 400;
+    min-width: 240px; }
   .carousel-text-container .contact-us:hover {
     background-color: #7E57A0; }
 
