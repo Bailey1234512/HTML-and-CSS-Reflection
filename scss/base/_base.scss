@@ -32,6 +32,27 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.sticky-header{
+	position: fixed;
+	padding: auto;
+	transition: top 0.3s ease-in-out;
+	z-index: 99999;
+}
+
+header {
+	background: #ddd;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	transition: top 0.3s ease-in-out;
+	width: 100%;
+	text-align: center;
+  }
+
+.nav-up{
+	top: -220px;
+}
+
 /* Links */
 
 a:link {
